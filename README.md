@@ -29,7 +29,9 @@ ansible_portable/
 ### 🔁 1. Activating the Environment
 
 ```bash
-source activate_ansible.sh
+
+cd ansible_portable
+source ansible_py/bin/activite
 
 This will:
 
