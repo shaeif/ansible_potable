@@ -10,7 +10,16 @@ This project provides a fully self-contained, portable Ansible environment desig
 
 ## 📁 Directory Structure
 
-ansible_portable/ ├── ansible_py/              # Python virtual environment with Ansible ├── collections/             # All Ansible collections (offline) ├── inventory/               # Inventory files (INI/YAML) ├── playbooks/               # Playbooks and roles │   └── roles/               # Custom roles for playbooks ├── facts_cache/             # Cached facts (optional) ├── ansible.cfg              # Customized Ansible configuration ├── activate_ansible.sh      # Wrapper script to activate the environment ├── requirements.yml         # Required Ansible collections └── README.md                # Documentation
+ansible_portable/ 
+├── ansible_py/              # Python virtual environment with Ansible 
+├── collections/             # All Ansible collections (offline) 
+├── inventory/               # Inventory files (INI/YAML) 
+├── playbooks/               # Playbooks and roles 
+│   └── roles/               # Custom roles for playbooks 
+├── facts_cache/             # Cached facts (optional) 
+├── ansible.cfg              # Customized Ansible configuration 
+├── activate_ansible.sh      # Wrapper script to activate the environment ├── requirements.yml         # Required Ansible collections 
+└── README.md                # Documentation
 
 
 ---
