@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Configuration
+USER="your_ssh_username"
+PASS="your_ssh_password"
+DEVICE_LIST="devices.txt"
+COMMANDS="commands.txt"
+LOG_DIR="logs"
+
+mkdir -p "$LOG_DIR"
+
+while IFS= read -r IP; do
+  echo "Connecting to $IP..."
+  {
+    sshpass -p "$PASS" ssh -o StrictHostKeyChecking=no "$USER@$IP" "
+      $(< $COMMANDS)
+    "
+  } > "$LOG_DIR/$IP.log" 2>&1
+  echo "Output saved to $LOG_DIR/$IP.log"
+done < "$DEVICE_LIST"
