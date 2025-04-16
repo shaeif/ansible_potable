@@ -1,4 +1,4 @@
-#!/home/shaeif/workspace/ansible_portable/ansible_py/bin/python
+#!./ansible_py/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
